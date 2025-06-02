@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>FastAPI Demo</title></head>
+<body>
+  <h2>請輸入你的名字</h2>
+  <form method="post" action="/greet">
+    <input type="text" name="name" placeholder="名字" required>
+    <input type="submit" value="送出">
+  </form>
+
+  {% if greeting %}
+    <h3>{{ greeting }}</h3>
+  {% endif %}
+</body>
+</html>
